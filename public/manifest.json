@@ -1,1 +1,17 @@
-see previous
+{
+  "name": "Unexpected AI • Profit Automations",
+  "short_name": "UnexpectedAI",
+  "description": "Interactive demos of AI agents that autonomously find customers, generate visualizations & sales pitches for pool installation, roofing, solar, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#22c55e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
