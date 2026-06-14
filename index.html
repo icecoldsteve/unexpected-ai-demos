@@ -1,1 +1,44 @@
-see previous
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive PWA demo of 5 unexpected AI automations: Pool Scanner, AI Receptionist, Property Scanner, AI Visibility Scanner, and Branded Mini Games. Find customers automatically, generate previews, and prepare sales." />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Unexpected AI • Profit Automations</title>
+    
+    <!-- Tailwind CSS via CDN for beautiful, production-ready styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function initTailwind() {
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                accent: '#22c55e',
+                dark: '#0a0a0a',
+                card: '#111111',
+                muted: '#27272a'
+              }
+            }
+          }
+        };
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initTailwind);
+      } else {
+        initTailwind();
+      }
+    </script>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body class="bg-[#0a0a0a] text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
